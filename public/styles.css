@@ -1,0 +1,224 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+body{
+    background-color: #E1E5EA;
+}
+
+
+
+.loading-section{
+    margin:0;
+    padding:0;
+    background-color: #34495e;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "montserrat",sans-serif;
+}
+
+.loading{
+    width:200px;
+    height:200px;
+    box-sizing: border-box;
+    border-radius:50%;
+    border-top: 10px solid #e74c3c;
+    position: relative;
+    animation :a1 2s linear infinite;
+}
+
+.loading::before , .loading::after{
+    content:'';
+    width:200px;
+    height:200px;
+    position: absolute;
+    left:0;
+    top:-10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+}
+
+
+.loading::after{
+    border-top: 10px solid #3498db;
+    transform: rotate(240deg);
+}
+
+.loading::before{
+    border-top: 10px solid #e67e22;
+    transform:rotate(120deg);
+}
+
+
+
+.loading span{
+    position:absolute;
+    width:200px;
+    height:200px;
+    color:#fff;
+    text-align: center;
+    line-height: 200px;
+    animation:a2 2s linear infinite;
+}
+
+@keyframes a1 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+ 
+@keyframes a2{
+    to {
+        transform :rotate(-360deg);
+    }
+}
+
+
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top:0px;
+    width:100%;
+    background-color: #009DAE;
+    padding: 1.2rem 1rem;
+}
+
+.main-content{
+    margin-top: 10rem;
+    
+}
+
+
+.card{
+    background-color: #fff;
+    width:35%;
+    height:35%;
+    border-radius: 10px;
+    margin:20px auto;
+    
+}
+.savedcard{
+    background-color: #fff;
+    width:100%;
+    height:300px;
+    border-radius: 10px;
+}
+
+.card-icon{
+   display: flex;
+   justify-content: space-between;  
+   padding: 1rem 1rem;
+  
+}
+.card-title{
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  font-family: 'Fredoka One',cursive;
+  font-weight: 100;
+}
+.card-date{
+    font-size: 0.8rem;
+}
+.card-block1{
+    margin-left: 7px;
+}
+
+.card-block1 h6{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+}
+
+.savedcard-block1{
+    padding:1.2rem 1.2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.savedcard-block1 h6{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    
+}
+
+.icon{
+    margin:0px 8px;
+    width:25px;
+}
+
+.card-img{
+    width:100%;
+    height:60%;
+}
+
+
+.home-block{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    height:45px;
+}
+.card-header{
+    padding: 1.2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.card-header-logo{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+
+.router-link{
+    text-decoration: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.2rem;
+    color:#fff;
+}
+
+.saved-link{
+    padding:0.5rem 1.2rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.8rem;
+}
+.savedwrapper{
+    padding:0rem 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:1.8rem;
+    grid-row-gap:1.8rem;
+}
+
+.emptysave_block{
+    text-align: center;
+}
+
+.emptysave_text{
+    font-size: 'Fredoka One', cursive;
+    font-size: 6rem;
+}
+
+.delete-icon{
+   width:100%;
+   height:100%;
+}
+.delete-btn{
+    border-radius: 100%;
+    width:15%;
+    height:15%;
+}
+
+
