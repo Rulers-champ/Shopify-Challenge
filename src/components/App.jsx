@@ -61,12 +61,14 @@ function App() {
     
     return (
       
-      <BrowserRouter>
+      <>
+        <h1>Good Morning</h1>
+          <BrowserRouter>
           <div className="header">
              <Link className="router-link" to="/">
                 <div class="home-block">
                     <img className="logo" src={Logo}/>
-                    <h1 className="home-title">Nasa Image Gallery</h1>
+                    <h1 className="home-title">Spacestagram</h1>
                 </div>
              </Link>
              <Link to="/saved">
@@ -87,6 +89,10 @@ function App() {
             </Routes>
           </div>
       </BrowserRouter>
+      </>
+      
+
+
           
        
 
